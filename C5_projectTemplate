@@ -1,0 +1,33 @@
+import random,pygame
+
+clock=pygame.time.Clock()
+screen = pygame.display.set_mode((400,600))
+pygame.display.set_caption("Dice Game")
+
+image_rect=pygame.Rect(100,100,30,30)
+
+dice_list=[]
+Q1 = pygame.image.load("1.png").convert_alpha()
+dice_list.append(Q1)
+Q2 = pygame.image.load("2.jpg").convert_alpha()
+dice_list.append(Q2)
+Q3 = pygame.image.load("3.png").convert_alpha()
+dice_list.append(Q3)
+Add Code here for remaining dice-side
+
+image=Q1
+while True:
+    screen.fill((0,0,0))
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+       add Event here
+             if event.key == pygame.K_LEFT or event.key==pygame.K_RIGHT:
+                
+                 select an random image
+                 
+                 
+    screen.blit(image,image_rect)
+    pygame.display.update()
+                 #clock.tick(30)
