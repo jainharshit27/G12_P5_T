@@ -13,7 +13,7 @@ Q2 = pygame.image.load("2.jpg").convert_alpha()
 dice_list.append(Q2)
 Q3 = pygame.image.load("3.png").convert_alpha()
 dice_list.append(Q3)
-Add Code here for remaining dice-side
+# Add Code here for remaining dice-side
 
 image=Q1
 while True:
@@ -22,12 +22,9 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
 
-       add Event here
-             if event.key == pygame.K_LEFT or event.key==pygame.K_RIGHT:
-                
-                 select an random image
-                 
+        # add Event here
+            if event.key == pygame.K_LEFT or event.key==pygame.K_RIGHT:
+                # select a random image
                  
     screen.blit(image,image_rect)
     pygame.display.update()
-                 #clock.tick(30)
